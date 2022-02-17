@@ -1,0 +1,3 @@
+trakt.py
+schedule
+cinemagoer==2022.2.11
