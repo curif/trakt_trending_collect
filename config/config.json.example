@@ -1,0 +1,33 @@
+{
+    "schedule_hours": 12,
+    "filters": {
+		"from_year": 2019,
+		"filter_list": [ {
+			"trakt_ratings": [5.5, 5.99],
+			"votes": 500,
+			"include_genres": [ "horror", "science-fiction" ],
+			"exclude_genres": [ "family", "biography", "comedy", "animation", "sports", "documentary", "short", "romance", "music", "anime" ],
+			"exclude_providers": [ "Netflix", "HBO Max" ]
+		}, {
+			"trakt_ratings": [6, 6.99],
+			"votes": 500,
+			"include_genres": [ "Suspense","thriller", "horror", "mystery", "action", "adventure", "crime", "science-fiction" ],
+			"exclude_genres": [ "family", "biography", "animation", "sports", "documentary", "short", "romance", "music", "anime" ],
+			"exclude_providers": [ "Netflix", "HBO Max" ]
+		}, {
+			"trakt_ratings": [7, 100],
+			"votes": 500,
+			"include_genres": [],
+			"exclude_genres": [ "family", "biography", "animation", "sports", "documentary", "short", "romance", "music", "anime"],
+			"exclude_providers": [ "Netflix", "HBO Max" ]
+			}
+      ]
+    },
+    "trakt": {
+        "base_url": "https://api.trakt.tv",
+        "id": "your id here",
+        "secret": "your secret",
+        "list": "MyList",
+        "user": "MyTraktUser"
+    },
+}
