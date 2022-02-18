@@ -58,12 +58,12 @@ Create a json file (you can copy the `config.json.example` in the `config/` path
 ```
 * schedule_hours: time between executions
 * filters: requeriments to select a movie.
-    * from_year: ignore movies realased before this date.
+    * from_year: ignore movies released before this year.
     * filter_list: list of filters to apply (in order)
         * imdb_range: from/to califications. A movie with Trakt califications between this range will be selected and added to the list.
-        * imdb_people: minimal quantity of people who voted.
+        * imdb_people: minimal number of people who voted.
         * include_genres: the movie must to have at least one of those genres. Empty means "all"
-        * exclude_genres: if the movie has at least one of those will be exluded. Empty means "all"
+        * exclude_genres: if the movie has at least one of those will be excluded. Empty means "all"
         * exclude_providers: a list of providers that you want to exclude, may be because you are subscribed to those providers.
 * trakt: 
     * trakt connection information (see below)
@@ -79,7 +79,7 @@ This configuration catches any movie with a calification 6.5/1000 or above. But 
 
 # Trakt
 
-You should give permissions to the application in order to access with your Trakt user. Go to the the applications page in Trakt and create a new application, then grant access to obtain your `id` and `secret`.
+You must give permissions to the application to be able to access with your Trakt user. Go to the the applications page in Trakt and create a new application, then grant access to obtain your `id` and `secret`.
 
 Goto https://trakt.tv/oauth/applications/new
 
@@ -92,7 +92,7 @@ A `dockerfile` is provided in order to use the program under docker.
 
 ## docker create image
 
-`docker build -t telegram-to-trakt .`
+`docker build -t trakt-trending-collect .`
 
 ## docker-compose example
 
